@@ -6,13 +6,13 @@
 <title>Banco de Imagens de Locacoes</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,sans-serif;background:#f5f5f5;color:#1a1a1a;min-height:100vh}.app{max-width:900px;margin:0 auto;padding:24px 16px}h1{font-size:20px;font-weight:600;margin-bottom:4px}.subtitle{font-size:13px;color:#666;margin-bottom:24px}.card{background:white;border-radius:12px;border:1px solid #e5e5e5;padding:20px;margin-bottom:16px}.step-label{font-size:11px;font-weight:600;text-transform:uppercase;color:#999;margin-bottom:8px}.step-title{font-size:15px;font-weight:600;margin-bottom:12px}.upload-area{border:2px dashed #d0d0d0;border-radius:8px;padding:32px;text-align:center;cursor:pointer}.upload-area:hover{border-color:#888}.upload-area.active{border-color:#4CAF50;background:#f0faf0}.upload-icon{font-size:32px;margin-bottom:8px}.upload-text{font-size:14px;color:#555}.upload-sub{font-size:12px;color:#999;margin-top:4px}#fileInput{display:none}.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;border:none}.btn-primary{background:#1a1a1a;color:white}.btn-primary:hover{background:#333}.btn-secondary{background:white;color:#1a1a1a;border:1px solid #d0d0d0}.btn-google{background:white;color:#1a1a1a;border:1px solid #d0d0d0}.google-logo{width:16px;height:16px}.progress-bar{background:#e5e5e5;border-radius:4px;height:6px;margin:12px 0;overflow:hidden}.progress-fill{height:100%;background:#1a1a1a;border-radius:4px;transition:width .3s}.progress-text{font-size:12px;color:#666}.section-grid{display:grid;grid-template-columns:220px 1fr;gap:16px}.section-list{display:flex;flex-direction:column;gap:4px}.section-item{padding:8px 12px;border-radius:6px;cursor:pointer;font-size:13px}.section-item:hover{background:#f5f5f5}.section-item.active{background:#1a1a1a;color:white}.section-count{font-size:11px;opacity:.6;margin-top:2px}.image-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}.img-thumb{border-radius:6px;overflow:hidden;border:1px solid #e5e5e5;aspect-ratio:4/3}.img-thumb img{width:100%;height:100%;object-fit:cover}.folder-row{display:flex;gap:8px;align-items:center;margin-top:8px}.folder-row input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid #d0d0d0;font-size:14px}.drive-status{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;font-size:13px}.drive-status.connected{background:#f0faf0;border:1px solid #86efac;color:#166534}.drive-status.disconnected{background:#fafafa;border:1px solid #e5e5e5;color:#555}.status-dot{width:8px;height:8px;border-radius:50%}.status-dot.on{background:#22c55e}.status-dot.off{background:#ccc}.plan-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:13px}.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500}.tag-green{background:#dcfce7;color:#166534}.tag-yellow{background:#fef9c3;color:#854d0e}.log-area{background:#1a1a1a;color:#e5e5e5;border-radius:8px;padding:12px;font-size:12px;font-family:monospace;max-height:140px;overflow-y:auto}.log-ok{color:#4ade80}.log-err{color:#f87171}.log-info{color:#93c5fd}.flex{display:flex}.gap8{gap:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}.hidden{display:none!important}.hint{font-size:12px;color:#888;line-height:1.6;margin-top:8px}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:100}.modal-box{background:white;border-radius:16px;padding:24px;max-width:440px;width:90%}.modal-box h2{font-size:17px;font-weight:600;margin-bottom:8px}.modal-box p{font-size:13px;color:#555;margin-bottom:16px;line-height:1.6}.modal-box input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #d0d0d0;font-size:13px;margin-bottom:12px}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,sans-serif;background:#f5f5f5;color:#1a1a1a;min-height:100vh}.app{max-width:960px;margin:0 auto;padding:24px 16px}h1{font-size:20px;font-weight:600;margin-bottom:4px}.subtitle{font-size:13px;color:#666;margin-bottom:24px}.card{background:white;border-radius:12px;border:1px solid #e5e5e5;padding:20px;margin-bottom:16px}.step-label{font-size:11px;font-weight:600;text-transform:uppercase;color:#999;margin-bottom:8px}.step-title{font-size:15px;font-weight:600;margin-bottom:12px}.upload-area{border:2px dashed #d0d0d0;border-radius:8px;padding:32px;text-align:center;cursor:pointer}.upload-area:hover{border-color:#888}.upload-area.active{border-color:#4CAF50;background:#f0faf0}.upload-icon{font-size:32px;margin-bottom:8px}.upload-text{font-size:14px;color:#555}.upload-sub{font-size:12px;color:#999;margin-top:4px}#fileInput{display:none}.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;border:none}.btn-primary{background:#1a1a1a;color:white}.btn-primary:hover{background:#333}.btn-secondary{background:white;color:#1a1a1a;border:1px solid #d0d0d0}.btn-google{background:white;color:#1a1a1a;border:1px solid #d0d0d0}.google-logo{width:16px;height:16px}.progress-bar{background:#e5e5e5;border-radius:4px;height:6px;margin:12px 0;overflow:hidden}.progress-fill{height:100%;background:#1a1a1a;border-radius:4px;transition:width .3s}.progress-text{font-size:12px;color:#666}.section-grid{display:grid;grid-template-columns:220px 1fr;gap:16px}.section-list{display:flex;flex-direction:column;gap:4px}.section-item{padding:8px 12px;border-radius:6px;cursor:pointer;font-size:13px}.section-item:hover{background:#f5f5f5}.section-item.active{background:#1a1a1a;color:white}.section-count{font-size:11px;opacity:.6;margin-top:2px}.image-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:6px}.img-thumb{border-radius:6px;overflow:hidden;border:1px solid #e5e5e5;aspect-ratio:4/3}.img-thumb img{width:100%;height:100%;object-fit:cover}.folder-row{display:flex;gap:8px;align-items:center;margin-top:8px}.folder-row input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid #d0d0d0;font-size:14px}.drive-status{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;font-size:13px}.drive-status.connected{background:#f0faf0;border:1px solid #86efac;color:#166534}.drive-status.disconnected{background:#fafafa;border:1px solid #e5e5e5;color:#555}.status-dot{width:8px;height:8px;border-radius:50%}.status-dot.on{background:#22c55e}.status-dot.off{background:#ccc}.plan-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:13px}.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500}.tag-green{background:#dcfce7;color:#166534}.tag-yellow{background:#fef9c3;color:#854d0e}.log-area{background:#1a1a1a;color:#e5e5e5;border-radius:8px;padding:12px;font-size:12px;font-family:monospace;max-height:160px;overflow-y:auto}.log-ok{color:#4ade80}.log-err{color:#f87171}.log-info{color:#93c5fd}.flex{display:flex}.gap8{gap:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}.hidden{display:none!important}.hint{font-size:12px;color:#888;line-height:1.6;margin-top:8px}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:100}.modal-box{background:white;border-radius:16px;padding:24px;max-width:440px;width:90%}.modal-box h2{font-size:17px;font-weight:600;margin-bottom:8px}.modal-box p{font-size:13px;color:#555;margin-bottom:16px;line-height:1.6}.modal-box input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #d0d0d0;font-size:13px;margin-bottom:12px}.info-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px;font-size:12px;color:#1e40af;margin-bottom:12px;line-height:1.6}
 </style>
 </head>
 <body>
 <div class="app">
 <h1>Banco de Imagens de Locacoes</h1>
-<p class="subtitle">Sube um PDF, extrai imagens e organiza no Google Drive por secoes</p>
+<p class="subtitle">Sube um PDF de locacao, extrai fotos individuais e organiza no Google Drive por secoes</p>
 <div class="card">
 <div class="step-label">Passo 1</div>
 <div class="step-title">Conectar ao Google Drive</div>
@@ -22,57 +22,326 @@
 </div>
 <div class="card">
 <div class="step-label">Passo 2</div><div class="step-title">Subir o PDF</div>
-<div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()"><div class="upload-icon">&#128196;</div><div class="upload-text">Clique para escolher um PDF ou arraste aqui</div><div class="upload-sub">Decks de locacao, apresentacoes de producao</div></div>
+<div class="info-box">&#128161; A IA vai analisar visualmente cada pagina para detectar as secoes do deck e extrair as fotos individuais de cada slide automaticamente.</div>
+<div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()"><div class="upload-icon">&#128196;</div><div class="upload-text">Clique para escolher um PDF ou arraste aqui</div><div class="upload-sub">Decks de locacao, apresentacoes de producao, qualquer PDF com imagens</div></div>
 <input type="file" id="fileInput" accept=".pdf" onchange="handleFile(event)">
 <div id="processingArea" class="hidden mt12"><div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div><div class="progress-text" id="progressText">Analisando...</div></div>
 </div>
 <div class="card hidden" id="previewCard">
-<div class="flex" style="justify-content:space-between;align-items:center;margin-bottom:16px"><div><div class="step-label">Passo 3</div><div class="step-title">Previa das secoes</div></div><div id="previewStats" class="flex gap8"></div></div>
-<div class="section-grid"><div><div class="step-label" style="margin-bottom:6px">Secoes</div><div class="section-list" id="sectionList"></div></div><div><div class="step-label" style="margin-bottom:6px">Imagens</div><div class="image-grid" id="imageGrid"></div></div></div>
+<div class="flex" style="justify-content:space-between;align-items:center;margin-bottom:16px">
+<div><div class="step-label">Passo 3</div><div class="step-title">Previa das secoes</div></div>
+<div id="previewStats" class="flex gap8"></div>
+</div>
+<div class="section-grid">
+<div><div class="step-label" style="margin-bottom:6px">Secoes detectadas</div><div class="section-list" id="sectionList"></div></div>
+<div><div class="step-label" style="margin-bottom:6px">Fotos desta secao</div><div class="image-grid" id="imageGrid"></div></div>
+</div>
 </div>
 <div class="card hidden" id="destinationCard">
 <div class="step-label">Passo 4</div><div class="step-title">Destino no Drive</div>
 <label style="font-size:13px;font-weight:500;display:block;margin-bottom:4px">Pasta raiz (opcional)</label>
 <div class="folder-row"><input type="text" id="rootFolderInput" placeholder="Ex: Banco de Locacoes"></div>
-<label style="font-size:13px;font-weight:500;display:block;margin-top:14px;margin-bottom:4px">Cidade ou projeto</label>
-<div class="folder-row"><input type="text" id="cityFolderInput" placeholder="Ex: Sao Paulo, Rio..."></div>
+<label style="font-size:13px;font-weight:500;display:block;margin-top:14px;margin-bottom:4px">Cidade ou nome do projeto</label>
+<div class="folder-row"><input type="text" id="cityFolderInput" placeholder="Ex: Sao Paulo, Rio de Janeiro..."></div>
 <div id="planSummary" class="mt16"></div>
 <div class="flex gap8 mt16"><button class="btn btn-primary" onclick="uploadToDrive()">Salvar no Google Drive</button><button class="btn btn-secondary" onclick="resetAll()">Recomecar</button></div>
 </div>
 <div class="card hidden" id="uploadProgressCard">
-<div class="step-label">Passo 5</div><div class="step-title">Salvando...</div>
+<div class="step-label">Passo 5</div><div class="step-title">Salvando no Google Drive...</div>
 <div class="progress-bar"><div class="progress-fill" id="driveProgressFill" style="width:0%"></div></div>
 <div class="progress-text" id="driveProgressText">Iniciando...</div>
 <div class="log-area mt12" id="logArea"></div>
-<div class="hidden mt12" id="doneArea"><div class="drive-status connected"><div class="status-dot on"></div><span id="doneText">Pronto!</span></div><div class="flex gap8 mt12"><button class="btn btn-primary" id="openDriveBtn">Abrir no Drive</button><button class="btn btn-secondary" onclick="resetAll()">Processar outro PDF</button></div></div>
+<div class="hidden mt12" id="doneArea">
+<div class="drive-status connected"><div class="status-dot on"></div><span id="doneText">Pronto!</span></div>
+<div class="flex gap8 mt12"><button class="btn btn-primary" id="openDriveBtn">Abrir no Drive</button><button class="btn btn-secondary" onclick="resetAll()">Processar outro PDF</button></div>
 </div>
 </div>
-<div id="clientIdModal" class="modal-overlay hidden"><div class="modal-box"><h2>Google Client ID</h2><p>Cole seu Client ID (termina em .apps.googleusercontent.com).</p><input type="text" id="clientIdInput" placeholder=".apps.googleusercontent.com"><div class="flex gap8"><button class="btn btn-primary" onclick="saveClientId()">Conectar</button><button class="btn btn-secondary" onclick="document.getElementById('clientIdModal').classList.add('hidden')">Cancelar</button></div></div></div>
+</div>
+<div id="clientIdModal" class="modal-overlay hidden"><div class="modal-box"><h2>Google Client ID</h2><p>Cole seu Client ID do Google Cloud Console (termina em .apps.googleusercontent.com).</p><input type="text" id="clientIdInput" placeholder=".apps.googleusercontent.com"><div class="flex gap8"><button class="btn btn-primary" onclick="saveClientId()">Conectar</button><button class="btn btn-secondary" onclick="document.getElementById('clientIdModal').classList.add('hidden')">Cancelar</button></div></div></div>
 <script>
 pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 let gL=false,goL=false,tC=null,aT=null,eS=[],cId=localStorage.getItem('gClientId')||'',cfUrl='';
 const SC='https://www.googleapis.com/auth/drive.file';
+
 function lGS(){return new Promise(r=>{if(gL&&goL){r();return;}const s1=document.createElement('script');s1.src='https://apis.google.com/js/api.js';s1.onload=()=>{gapi.load('client',async()=>{await gapi.client.init({});await gapi.client.load('https://www.googleapis.com/discovery/v1/apis/drive/v3/rest');gL=true;if(goL)r();});};document.head.appendChild(s1);const s2=document.createElement('script');s2.src='https://accounts.google.com/gsi/client';s2.onload=()=>{goL=true;if(gL)r();};document.head.appendChild(s2);})}
 function startAuth(){if(!cId){document.getElementById('clientIdModal').classList.remove('hidden');return;}doAuth();}
 function saveClientId(){const v=document.getElementById('clientIdInput').value.trim();if(!v||!v.includes('.apps.googleusercontent.com')){alert('Client ID invalido');return;}cId=v;localStorage.setItem('gClientId',v);document.getElementById('clientIdModal').classList.add('hidden');doAuth();}
 async function doAuth(){try{sS('Conectando...',false);await lGS();tC=google.accounts.oauth2.initTokenClient({client_id:cId,scope:SC,callback:r=>{if(r.error){sS('Erro: '+r.error,false);return;}aT=r.access_token;gapi.client.setToken({access_token:aT});sS('Conectado ao Google Drive',true);}});tC.requestAccessToken();}catch(e){sS('Erro: '+e.message,false);}}
 function sS(t,c){document.getElementById('statusText').textContent=t;document.getElementById('statusDot').className='status-dot '+(c?'on':'off');document.getElementById('driveStatus').className='drive-status '+(c?'connected':'disconnected');}
-const uA=document.getElementById('uploadArea');uA.addEventListener('dragover',e=>{e.preventDefault();uA.classList.add('active');});uA.addEventListener('dragleave',()=>uA.classList.remove('active'));uA.addEventListener('drop',e=>{e.preventDefault();uA.classList.remove('active');if(e.dataTransfer.files[0])pF(e.dataTransfer.files[0]);});
+
+const uA=document.getElementById('uploadArea');
+uA.addEventListener('dragover',e=>{e.preventDefault();uA.classList.add('active');});
+uA.addEventListener('dragleave',()=>uA.classList.remove('active'));
+uA.addEventListener('drop',e=>{e.preventDefault();uA.classList.remove('active');if(e.dataTransfer.files[0])pF(e.dataTransfer.files[0]);});
 function handleFile(e){if(e.target.files[0])pF(e.target.files[0]);}
-async function pF(file){if(!aT){alert('Conecte o Google Drive primeiro.');return;}document.getElementById('processingArea').classList.remove('hidden');sp(5,'Carregando PDF...');const ab=await file.arrayBuffer();const pdf=await pdfjsLib.getDocument({data:ab}).promise;const n=pdf.numPages;sp(10,n+' paginas');const pages=[];for(let p=1;p<=n;p++){const pg=await pdf.getPage(p);const cv=document.createElement('canvas');const vp=pg.getViewport({scale:1.5});cv.width=vp.width;cv.height=vp.height;await pg.render({canvasContext:cv.getContext('2d'),viewport:vp}).promise;const txt=(await pg.getTextContent()).items.map(i=>i.str).join(' ').trim();pages.push({pageNum:p,img:cv.toDataURL('image/jpeg',0.85),text:txt});sp(10+Math.round((p/n)*45),'Pag '+p+'/'+n);}sp(60,'Detectando secoes...');eS=await dSec(pages);sp(90,'Previa...');bPrev(eS);sp(100,'OK!');document.getElementById('processingArea').classList.add('hidden');document.getElementById('previewCard').classList.remove('hidden');document.getElementById('destinationCard').classList.remove('hidden');uPlan();}
-async function dSec(pages){const pt=pages.map(p=>'Pag '+p.pageNum+': "'+p.text.substring(0,100)+'"').join('\n');const pr='Analise PDF de deck de locacao audiovisual. Textos:\n\n'+pt+'\n\nIdentifique secoes (EXTERIORES, INTERIORES, COBERTURAS, etc). JSON apenas:\n[{"name":"Nome","startPage":1,"endPage":5}]\nSe nao achar: [{"name":"Geral","startPage":1,"endPage":'+pages.length+'}]';try{const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:800,messages:[{role:'user',content:pr}]})});const d=await r.json();const t=d.content?.[0]?.text||'';const m=t.match(/\[[\s\S]*\]/);if(m){const p=JSON.parse(m[0]);return p.map(s=>({name:s.name,images:pages.filter(p=>p.pageNum>=s.startPage&&p.pageNum<=s.endPage)}));}}catch(e){}return[{name:'Geral',images:pages}];}
-function bPrev(s){const l=document.getElementById('sectionList');l.innerHTML='';const tot=s.reduce((a,x)=>a+x.images.length,0);document.getElementById('previewStats').innerHTML='<span class="tag tag-green">'+s.length+' secoes</span><span class="tag tag-yellow">'+tot+' imgs</span>';s.forEach((x,i)=>{const el=document.createElement('div');el.className='section-item'+(i===0?' active':'');el.innerHTML='<div>'+x.name+'</div><div class="section-count">'+x.images.length+'</div>';el.onclick=()=>sel(i);l.appendChild(el);});sel(0);}
-function sel(i){document.querySelectorAll('.section-item').forEach((el,j)=>el.classList.toggle('active',j===i));const g=document.getElementById('imageGrid');g.innerHTML='';eS[i].images.forEach(im=>{const d=document.createElement('div');d.className='img-thumb';d.innerHTML='<img src="'+im.img+'" loading="lazy">';g.appendChild(d);});}
-function uPlan(){const c=document.getElementById('cityFolderInput').value.trim()||'[cidade]';const r=document.getElementById('rootFolderInput').value.trim()||'Meu Drive';if(!eS.length)return;const rows=eS.map(s=>'<div class="plan-row"><span>'+r+'/'+c+'/'+s.name+'</span><span class="tag tag-green">'+s.images.length+'</span></div>').join('');document.getElementById('planSummary').innerHTML='<div style="background:#f9f9f9;border-radius:8px;padding:12px;">'+rows+'</div>';}
-document.getElementById('cityFolderInput').addEventListener('input',uPlan);document.getElementById('rootFolderInput').addEventListener('input',uPlan);
+
+async function pF(file){
+  if(!aT){alert('Conecte o Google Drive primeiro.');return;}
+  document.getElementById('processingArea').classList.remove('hidden');
+  sp(5,'Carregando PDF...');
+  const ab=await file.arrayBuffer();
+  const pdf=await pdfjsLib.getDocument({data:ab}).promise;
+  const n=pdf.numPages;
+  sp(10,n+' paginas encontradas');
+  
+  const pages=[];
+  for(let p=1;p<=n;p++){
+    const pg=await pdf.getPage(p);
+    const vp=pg.getViewport({scale:2.0});
+    const cv=document.createElement('canvas');
+    cv.width=vp.width;cv.height=vp.height;
+    await pg.render({canvasContext:cv.getContext('2d'),viewport:vp}).promise;
+    const txt=(await pg.getTextContent()).items.map(i=>i.str).join(' ').trim();
+    pages.push({pageNum:p,canvas:cv,dataUrl:cv.toDataURL('image/jpeg',0.85),text:txt,w:vp.width,h:vp.height});
+    sp(10+Math.round((p/n)*30),'Renderizando pagina '+p+'/'+n);
+  }
+  
+  sp(42,'Analisando estrutura com IA (pode demorar um pouco)...');
+  const sections=await detectSectionsVision(pages);
+  
+  sp(72,'Extraindo fotos individuais de cada slide...');
+  for(const sec of sections){
+    const extracted=[];
+    for(const pg of sec.pages){
+      const photos=extractPhotosFromPage(pg);
+      extracted.push(...photos);
+    }
+    sec.images=extracted;
+  }
+  
+  eS=sections;
+  sp(95,'Montando previa...');
+  buildPreview(eS);
+  sp(100,'Concluido!');
+  document.getElementById('processingArea').classList.add('hidden');
+  document.getElementById('previewCard').classList.remove('hidden');
+  document.getElementById('destinationCard').classList.remove('hidden');
+  uPlan();
+}
+
+async function detectSectionsVision(pages){
+  // Send thumbnails of all pages to Claude vision to identify section title pages
+  const thumbs=pages.map(p=>{
+    const tc=document.createElement('canvas');
+    const scale=400/p.w;
+    tc.width=400;tc.height=Math.round(p.h*scale);
+    tc.getContext('2d').drawImage(p.canvas,0,0,tc.width,tc.height);
+    return {pageNum:p.pageNum,thumb:tc.toDataURL('image/jpeg',0.7),text:p.text};
+  });
+  
+  // Build vision prompt - send thumbnails in batches to avoid token limits
+  const pageDesc=thumbs.map(t=>'Pagina '+t.pageNum+(t.text?': "'+t.text.substring(0,80)+'"':'')).join('\n');
+  
+  const prompt='Analise este deck de locacao de producao audiovisual. Descricao das paginas:\n\n'+pageDesc+'\n\nIdentifique as paginas que sao TITULOS DE SECAO (paginas escuras/pretas com nome de categoria como "SÃO PAULO CITY / Shop", "SÃO PAULO / EXTERIORS", "CORPORATE BOARDROOM", "LOCKER ROOM", "STUDIO" etc). Estas paginas dividem o deck em categorias.\n\nRetorne APENAS JSON valido:\n[{"name":"Nome da Secao","titlePage":3,"startPage":4,"endPage":12},...]\n\nRegras:\n- titlePage = pagina do titulo (sera pulada, nao contem fotos)\n- startPage = primeira pagina com fotos desta secao\n- endPage = ultima pagina com fotos desta secao\n- Se nao houver titulo claro, retorne [{"name":"Geral","titlePage":0,"startPage":1,"endPage":'+pages.length+'}]\nApenas JSON, sem explicacao.';
+  
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2000,messages:[{role:'user',content:prompt}]})
+    });
+    const d=await r.json();
+    const t=d.content?.[0]?.text||'';
+    const m=t.match(/\[[\s\S]*\]/);
+    if(m){
+      const parsed=JSON.parse(m[0]);
+      return parsed.map(s=>({
+        name:s.name,
+        pages:pages.filter(p=>p.pageNum>=s.startPage&&p.pageNum<=s.endPage),
+        images:[]
+      })).filter(s=>s.pages.length>0);
+    }
+  }catch(e){console.error(e);}
+  return[{name:'Geral',pages:pages,images:[]}];
+}
+
+function extractPhotosFromPage(pg){
+  // Use canvas pixel analysis to find photo regions in the slide
+  const ctx=pg.canvas.getContext('2d');
+  const w=pg.w, h=pg.h;
+  const imgData=ctx.getImageData(0,0,w,h);
+  const data=imgData.data;
+  
+  // Check if this is a title/black page - skip if >60% dark pixels
+  let darkPx=0;
+  const sample=Math.min(5000,w*h);
+  const step=Math.floor(w*h/sample);
+  for(let i=0;i<w*h;i+=step){
+    const r=data[i*4],g=data[i*4+1],b=data[i*4+2];
+    if(r<40&&g<40&&b<40)darkPx++;
+  }
+  if(darkPx/sample>0.5)return[];
+  
+  // Detect grid layout: most location decks use 2x2 or 1x2 or 2x1 photo grids
+  // Strategy: find separator lines (near-white or near-black uniform rows/cols)
+  const GRID_THRESH=15;
+  
+  // Scan for horizontal separators
+  const hSeps=[0];
+  for(let y=Math.floor(h*0.1);y<h*0.9;y++){
+    let uniform=true;
+    const refR=data[(y*w)*4],refG=data[(y*w)*4+1],refB=data[(y*w)*4+2];
+    const isLight=(refR>220&&refG>220&&refB>220);
+    const isDark=(refR<30&&refG<30&&refB<30);
+    if(!isLight&&!isDark)continue;
+    for(let x=0;x<w;x+=8){
+      const r=data[(y*w+x)*4],g=data[(y*w+x)*4+1],b=data[(y*w+x)*4+2];
+      if(isLight&&!(r>200&&g>200&&b>200)){uniform=false;break;}
+      if(isDark&&!(r<50&&g<50&&b<50)){uniform=false;break;}
+    }
+    if(uniform&&(hSeps.length===0||y-hSeps[hSeps.length-1]>h*0.08))hSeps.push(y);
+  }
+  hSeps.push(h);
+  
+  // Scan for vertical separators
+  const vSeps=[0];
+  for(let x=Math.floor(w*0.1);x<w*0.9;x++){
+    let uniform=true;
+    const refR=data[x*4],refG=data[x*4+1],refB=data[x*4+2];
+    const isLight=(refR>220&&refG>220&&refB>220);
+    const isDark=(refR<30&&refG<30&&refB<30);
+    if(!isLight&&!isDark)continue;
+    for(let y=0;y<h;y+=8){
+      const r=data[(y*w+x)*4],g=data[(y*w+x)*4+1],b=data[(y*w+x)*4+2];
+      if(isLight&&!(r>200&&g>200&&b>200)){uniform=false;break;}
+      if(isDark&&!(r<50&&g<50&&b<50)){uniform=false;break;}
+    }
+    if(uniform&&(vSeps.length===0||x-vSeps[vSeps.length-1]>w*0.08))vSeps.push(x);
+  }
+  vSeps.push(w);
+  
+  const photos=[];
+  const minArea=(w*h)*0.04; // at least 4% of page
+  
+  for(let hi=0;hi<hSeps.length-1;hi++){
+    for(let vi=0;vi<vSeps.length-1;vi++){
+      const rx=vSeps[vi]+2,ry=hSeps[hi]+2;
+      const rw=vSeps[vi+1]-vSeps[vi]-4,rh=hSeps[hi+1]-hSeps[hi]-4;
+      if(rw*rh<minArea||rw<50||rh<50)continue;
+      
+      // Check this region has actual photo content (variance in pixels)
+      let variance=0,sum=0,sum2=0,cnt=0;
+      for(let sy=ry;sy<ry+rh;sy+=6){
+        for(let sx=rx;sx<rx+rw;sx+=6){
+          const lum=(data[(sy*w+sx)*4]+data[(sy*w+sx)*4+1]+data[(sy*w+sx)*4+2])/3;
+          sum+=lum;sum2+=lum*lum;cnt++;
+        }
+      }
+      const mean=sum/cnt;variance=sum2/cnt-mean*mean;
+      if(variance<200)continue; // too uniform = not a photo
+      
+      const cropCanvas=document.createElement('canvas');
+      cropCanvas.width=rw;cropCanvas.height=rh;
+      cropCanvas.getContext('2d').drawImage(pg.canvas,rx,ry,rw,rh,0,0,rw,rh);
+      photos.push({dataUrl:cropCanvas.toDataURL('image/jpeg',0.92),pageNum:pg.pageNum});
+    }
+  }
+  
+  // Fallback: if no regions found, return the whole page (skip if title-like)
+  if(photos.length===0){
+    photos.push({dataUrl:pg.dataUrl,pageNum:pg.pageNum});
+  }
+  
+  return photos;
+}
+
+function buildPreview(sections){
+  const list=document.getElementById('sectionList');list.innerHTML='';
+  const tot=sections.reduce((a,s)=>a+s.images.length,0);
+  document.getElementById('previewStats').innerHTML='<span class="tag tag-green">'+sections.length+' secoes</span><span class="tag tag-yellow">'+tot+' fotos</span>';
+  sections.forEach((s,i)=>{
+    const el=document.createElement('div');el.className='section-item'+(i===0?' active':'');
+    el.innerHTML='<div>'+s.name+'</div><div class="section-count">'+s.images.length+' foto'+(s.images.length!==1?'s':'')+'</div>';
+    el.onclick=()=>sel(i);list.appendChild(el);
+  });sel(0);
+}
+
+function sel(i){
+  document.querySelectorAll('.section-item').forEach((el,j)=>el.classList.toggle('active',j===i));
+  const g=document.getElementById('imageGrid');g.innerHTML='';
+  eS[i].images.slice(0,60).forEach(im=>{
+    const d=document.createElement('div');d.className='img-thumb';
+    d.innerHTML='<img src="'+im.dataUrl+'" loading="lazy">';
+    g.appendChild(d);
+  });
+  if(eS[i].images.length>60){
+    const more=document.createElement('div');more.style.cssText='grid-column:1/-1;font-size:12px;color:#888;padding:8px';
+    more.textContent='+ '+(eS[i].images.length-60)+' fotos adicionais serao salvas no Drive';
+    g.appendChild(more);
+  }
+}
+
+function uPlan(){
+  const c=document.getElementById('cityFolderInput').value.trim()||'[cidade]';
+  const r=document.getElementById('rootFolderInput').value.trim()||'Meu Drive';
+  if(!eS.length)return;
+  const rows=eS.map(s=>'<div class="plan-row"><span>&#128193; '+r+'/'+c+'/'+s.name+'</span><span class="tag tag-green">'+s.images.length+' fotos</span></div>').join('');
+  document.getElementById('planSummary').innerHTML='<div style="background:#f9f9f9;border-radius:8px;padding:12px;">'+rows+'</div>';
+}
+document.getElementById('cityFolderInput').addEventListener('input',uPlan);
+document.getElementById('rootFolderInput').addEventListener('input',uPlan);
+
 function lg(m,t='info'){const a=document.getElementById('logArea');const l=document.createElement('div');l.className='log-line log-'+t;l.textContent=m;a.appendChild(l);a.scrollTop=a.scrollHeight;}
 async function dG(p){const r=await fetch('https://www.googleapis.com/drive/v3/'+p,{headers:{'Authorization':'Bearer '+aT}});return r.json();}
 async function dP(p,b){const r=await fetch('https://www.googleapis.com/drive/v3/'+p,{method:'POST',headers:{'Authorization':'Bearer '+aT,'Content-Type':'application/json'},body:JSON.stringify(b)});return r.json();}
-async function gOC(name,pid){const q=encodeURIComponent("name='"+name+"' and mimeType='application/vnd.google-apps.folder' and trashed=false"+(pid?" and '"+pid+"' in parents":'')); const d=await dG('files?q='+q+'&fields=files(id,name)');if(d.files&&d.files.length>0){lg('Existente: '+name,'info');return d.files[0].id;}const c=await dP('files',{name,mimeType:'application/vnd.google-apps.folder',parents:pid?[pid]:[]});lg('Criada: '+name,'ok');return c.id;}
-async function uImg(dUrl,fn,fid){const b=dUrl.split(',')[1];const bin=atob(b);const arr=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)arr[i]=bin.charCodeAt(i);const blob=new Blob([arr],{type:'image/jpeg'});const meta=JSON.stringify({name:fn,parents:[fid]});const form=new FormData();form.append('metadata',new Blob([meta],{type:'application/json'}));form.append('file',blob);const r=await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart',{method:'POST',headers:{'Authorization':'Bearer '+aT},body:form});return r.json();}
-async function uploadToDrive(){const city=document.getElementById('cityFolderInput').value.trim();const root=document.getElementById('rootFolderInput').value.trim();if(!city){alert('Preencha a cidade.');return;}if(!aT){alert('Conecte primeiro.');return;}document.getElementById('uploadProgressCard').classList.remove('hidden');document.getElementById('uploadProgressCard').scrollIntoView({behavior:'smooth'});const total=eS.reduce((a,s)=>a+s.images.length,0);let done=0;try{lg('Iniciando...','info');let pid=null;if(root)pid=await gOC(root,null);const cid=await gOC(city,pid);cfUrl='https://drive.google.com/drive/folders/'+cid;for(const s of eS){const sid=await gOC(s.name,cid);for(const im of s.images){const fn=s.name.replace(/[^a-zA-Z0-9]/g,'_')+'_p'+im.pageNum+'.jpg';await uImg(im.img,fn,sid);done++;document.getElementById('driveProgressFill').style.width=Math.round((done/total)*100)+'%';document.getElementById('driveProgressText').textContent=done+'/'+total;lg(fn,'ok');}}document.getElementById('driveProgressText').textContent='Pronto!';document.getElementById('doneText').textContent=total+' imagens em '+eS.length+' pastas';document.getElementById('doneArea').classList.remove('hidden');document.getElementById('openDriveBtn').onclick=()=>window.open(cfUrl,'_blank');lg('Concluido!','ok');}catch(e){lg('Erro: '+e.message,'err');}}
+async function gOC(name,pid){
+  const q=encodeURIComponent("name='"+name+"' and mimeType='application/vnd.google-apps.folder' and trashed=false"+(pid?" and '"+pid+"' in parents":''));
+  const d=await dG('files?q='+q+'&fields=files(id,name)');
+  if(d.files&&d.files.length>0){lg('Pasta existente: '+name,'info');return d.files[0].id;}
+  const c=await dP('files',{name,mimeType:'application/vnd.google-apps.folder',parents:pid?[pid]:[]});
+  lg('Criada: '+name,'ok');return c.id;
+}
+async function uImg(dUrl,fn,fid){
+  const b=dUrl.split(',')[1];const bin=atob(b);const arr=new Uint8Array(bin.length);
+  for(let i=0;i<bin.length;i++)arr[i]=bin.charCodeAt(i);
+  const blob=new Blob([arr],{type:'image/jpeg'});
+  const meta=JSON.stringify({name:fn,parents:[fid]});
+  const form=new FormData();form.append('metadata',new Blob([meta],{type:'application/json'}));form.append('file',blob);
+  const r=await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart',{method:'POST',headers:{'Authorization':'Bearer '+aT},body:form});
+  return r.json();
+}
+async function uploadToDrive(){
+  const city=document.getElementById('cityFolderInput').value.trim();
+  const root=document.getElementById('rootFolderInput').value.trim();
+  if(!city){alert('Preencha a cidade.');return;}
+  if(!aT){alert('Conecte primeiro.');return;}
+  document.getElementById('uploadProgressCard').classList.remove('hidden');
+  document.getElementById('uploadProgressCard').scrollIntoView({behavior:'smooth'});
+  const total=eS.reduce((a,s)=>a+s.images.length,0);let done=0;
+  try{
+    lg('Iniciando upload...','info');
+    let pid=null;if(root)pid=await gOC(root,null);
+    const cid=await gOC(city,pid);
+    cfUrl='https://drive.google.com/drive/folders/'+cid;
+    for(const s of eS){
+      const sid=await gOC(s.name,cid);
+      for(let i=0;i<s.images.length;i++){
+        const im=s.images[i];
+        const fn=s.name.replace(/[^a-zA-Z0-9]/g,'_')+'_p'+im.pageNum+'_f'+(i+1)+'.jpg';
+        await uImg(im.dataUrl,fn,sid);done++;
+        document.getElementById('driveProgressFill').style.width=Math.round((done/total)*100)+'%';
+        document.getElementById('driveProgressText').textContent='Enviando '+done+'/'+total+' fotos';
+        lg(fn,'ok');
+      }
+    }
+    document.getElementById('driveProgressText').textContent='Pronto!';
+    document.getElementById('doneText').textContent=total+' fotos salvas no Drive em '+eS.length+' pastas.';
+    document.getElementById('doneArea').classList.remove('hidden');
+    document.getElementById('openDriveBtn').onclick=()=>window.open(cfUrl,'_blank');
+    lg('Upload concluido!','ok');
+  }catch(e){lg('Erro: '+e.message,'err');}
+}
+
 function sp(pct,txt){document.getElementById('progressFill').style.width=pct+'%';document.getElementById('progressText').textContent=txt;}
-function resetAll(){eS=[];['previewCard','destinationCard','uploadProgressCard'].forEach(id=>document.getElementById(id).classList.add('hidden'));document.getElementById('logArea').innerHTML='';document.getElementById('cityFolderInput').value='';document.getElementById('fileInput').value='';document.getElementById('processingArea').classList.add('hidden');sp(0,'');}
+function resetAll(){
+  eS=[];
+  ['previewCard','destinationCard','uploadProgressCard'].forEach(id=>document.getElementById(id).classList.add('hidden'));
+  document.getElementById('logArea').innerHTML='';
+  document.getElementById('cityFolderInput').value='';
+  document.getElementById('fileInput').value='';
+  document.getElementById('processingArea').classList.add('hidden');
+  sp(0,'');
+}
 if(cId)document.getElementById('clientIdInput').value=cId;
 </script>
 </body>
